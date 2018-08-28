@@ -58,7 +58,7 @@
       </div>
 
       <div class="contact-form">
-        <form id="contact-form" method="post" action="contactformhandler.php">
+        <form id="contact-form" method="post" action="contactform.php">
 
           <label for="name">Name</label>
           <input id="name" name="name" type="text" class="form-control" placeholder="Your name..." required>
@@ -69,7 +69,7 @@
           <label for="message">Messsage</label>
           <textarea id="message" name="message" class="form-control" placeholder="Your Message..." style="height:200px" required></textarea>
 
-          <input type="submit" class="form-control submit" value="Submit">
+          <button type="submit" name="submit" value="Submit">Submit</button>
         </form>
       </div>
     </main>
@@ -87,8 +87,9 @@
         resize: vertical}
 
 
-      input[type=submit] {
+      button[type=submit] {
         background-color: #cc3300;
+        width: 100%;
         color: white;
         padding: 12px 20px;
         border: none;
