@@ -48,7 +48,6 @@
     <main role="main" class="inner cover">
 
       <div class="contact-title">
-        <h1 style="text-align: center">Contact US</h1>
         <p style="text-align: center">
           Vancouver, BC, Canada<br>
           Info@cmai.ca</br>
@@ -57,7 +56,7 @@
         </p>
       </div>
 
-      <div class="contact-form">
+      <!-- <div class="contact-form">
         <form id="contact-form" method="post" action="contactform.php">
 
           <label for="name">Name</label>
@@ -71,8 +70,11 @@
 
           <button type="submit" name="submit" value="submit">submit</button>
         </form>
-      </div>
-    </main>
+      </div> -->
+
+    <div class="wrapper"><a href="mailto:info@cmai.ca"><button type="submit">Contact Us</button></a></div>
+
+  </main>
     <style>
       input[type=text],
       select,
@@ -85,11 +87,14 @@
         margin-top: 6px;
         margin-bottom: 16px;
         resize: vertical}
-
+div.wrapper{
+  text-align: center;
+}
 
       button[type=submit] {
         background-color: #cc3300;
-        width: 100%;
+        align-items: center;
+        width: 200px;
         color: white;
         padding: 12px 20px;
         border: none;
